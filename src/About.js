@@ -3,7 +3,7 @@ import { faUser } from '@fortawesome/free-regular-svg-icons'
 
 const About = () => {
     return(
-        <section className="about">
+        <section id="about" className="about">
             <h3 className="section-title">
                 <FontAwesomeIcon icon={faUser} />
                 About Me

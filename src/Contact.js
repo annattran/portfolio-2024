@@ -3,7 +3,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 const Contact = () => {
     return (
-        <section className="contact">
+        <section id="contact" className="contact">
             <h3 className="section-title">
                 <FontAwesomeIcon icon={faEnvelope} />
                 Let's Connect

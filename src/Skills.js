@@ -4,7 +4,7 @@ import { faHtml5, faCss3Alt, faSass, faJs, faReact, faPhp, faWordpress, faGithub
 
 const Skills = () => {
     return (
-        <section className="skills">
+        <section id="skills" className="skills">
             <h3 className="section-title">
                 <FontAwesomeIcon icon={faCubesStacked} />
                 My Toolbox

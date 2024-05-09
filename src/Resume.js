@@ -3,7 +3,7 @@ import { faBriefcase, faArrowUpRightFromSquare } from '@fortawesome/free-solid-s
 
 const Resume = () => {
     return (
-        <section className="resume">
+        <section id="resume" className="resume">
             <h3 className="section-title">
                 <FontAwesomeIcon icon={faBriefcase} />
                 My Resume

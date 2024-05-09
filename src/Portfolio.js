@@ -8,7 +8,7 @@ import weddingGuestbook from './assets/weddingGuestbook.png';
 
 const Portfolio = () => {
     return (
-        <section className="portfolio">
+        <section id="portfolio" className="portfolio">
             <h3 className="section-title">
                 <FontAwesomeIcon icon={faCode} />
                 Featured Projects

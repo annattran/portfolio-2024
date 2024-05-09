@@ -35,11 +35,24 @@ h4 {
 }
 
 a {
-    color: white;
     transition: all ease-out .15s;
 }
 
-a:hover {
+aside .socials a,
+aside .navigation a {
+    color: rgba(255, 255, 255, .7);
+}
+
+aside .socials a:hover,
+aside .navigation a:hover,
+aside .navigation li.active a,
+aside footer a,
+section a {
+    color: white;
+}
+
+aside footer a:hover,
+section a:hover {
     color: rgba(255, 255, 255, .2);
 }
 
@@ -78,6 +91,7 @@ aside .navigation li {
     margin: 20px 0;
     position: relative;
     padding-left: 40px;
+    transition: all ease-out .15s;
 }
 
 aside .navigation li::before {
@@ -88,6 +102,22 @@ aside .navigation li::before {
     background: white;
     top: 50%;
     left: 0;
+    transition: all ease-out .15s;
+}
+
+aside .navigation li.active,
+aside .navigation li:hover {
+    padding-left: 70px;
+    font-weight: bold;
+}
+
+aside .navigation li.active::before,
+aside .navigation li:hover::before {
+    width: 60px;
+}
+
+aside .navigation a {
+    text-decoration: none;
 }
 
 aside footer {
