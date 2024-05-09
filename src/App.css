@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(1deg, #8BC6EC 0%, #9599E2 100%);
+    color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-size: 48px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    font-size: 20px;
+    font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    color: white;
+    transition: all ease-out .15s;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, .2);
+}
+
+aside ul,
+section:not(.about) ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    width: 50%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside div {
+    max-width: 320px;
+}
+
+aside .socials {
+    display: flex;
+    gap: 15px;
+}
+
+aside .socials a {
+    font-size: 20px;
+}
+
+aside .navigation {
+    margin-top: 60px;
+}
+
+aside .navigation li {
+    margin: 20px 0;
+    position: relative;
+    padding-left: 40px;
+}
+
+aside .navigation li::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: white;
+    top: 50%;
+    left: 0;
+}
+
+aside footer {
+    max-width: 320px;
+}
+
+aside footer span {
+    font-weight: bold;
+}
+
+main {
+    width: 50%;
+    padding: 90px 0;
+    line-height: 1.6;
+}
+
+section:not(:last-of-type) {
+    margin-bottom: 150px;
+}
+
+.section-title {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    border: 1px solid white;
+    width: 100%;
+    bottom: -20px;
+}
+
+section.resume li {
+    display: flex;
+}
+
+section.resume .duration {
+    min-width: 200px;
+    font-size: 14px;
+    line-height: 2;
+    color: rgba(255, 255, 255, .7);
+}
+
+section.resume .title {
+    font-weight: 500;
+}
+
+section.resume a {
+    font-weight: normal;
+}
+
+section.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0;
+}
+
+section.skills li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 130px;
+}
+
+section.skills ul svg {
+    font-size: 40px;
+}
+
+section.portfolio .projects>li {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+section.portfolio .projects>li+li {
+    margin-top: 50px;
+}
+
+section.portfolio img {
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    margin-top: 5px;
+}
+
+section.portfolio p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .7);
+}
+
+section.portfolio .button-container {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+section.portfolio a+a {
+    margin-left: 20px;
+}
+
+section.portfolio .skills {
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+section.portfolio .skills li {
+    background: rgba(255, 255, 255, .2);
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-weight: 500;
 }
