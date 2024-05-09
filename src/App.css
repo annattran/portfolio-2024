@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #8BC6EC;
     background-image: linear-gradient(1deg, #8BC6EC 0%, #9599E2 100%);
     color: white;
     font-family: "Montserrat", sans-serif;
+    padding: 50px 25px;
 }
 
 h1,
@@ -45,23 +52,12 @@ section:not(.about) ul {
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 aside {
-    width: 50%;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    padding: 90px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-aside div {
-    max-width: 320px;
 }
 
 aside .socials {
@@ -74,6 +70,7 @@ aside .socials a {
 }
 
 aside .navigation {
+    display: none;
     margin-top: 60px;
 }
 
@@ -94,7 +91,7 @@ aside .navigation li::before {
 }
 
 aside footer {
-    max-width: 320px;
+    display: none;
 }
 
 aside footer span {
@@ -102,13 +99,12 @@ aside footer span {
 }
 
 main {
-    width: 50%;
     padding: 90px 0;
     line-height: 1.6;
 }
 
 section:not(:last-of-type) {
-    margin-bottom: 150px;
+    margin-bottom: 75px;
 }
 
 .section-title {
@@ -128,8 +124,12 @@ section:not(:last-of-type) {
     bottom: -20px;
 }
 
-section.resume li {
-    display: flex;
+section.resume p {
+    margin: 0;
+}
+
+section.resume li+li {
+    margin-top: 30px;
 }
 
 section.resume .duration {
@@ -157,7 +157,7 @@ section.skills li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 130px;
+    width: calc(100% / 3);
 }
 
 section.skills ul svg {
@@ -166,7 +166,7 @@ section.skills ul svg {
 
 section.portfolio .projects>li {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -175,10 +175,8 @@ section.portfolio .projects>li+li {
 }
 
 section.portfolio img {
-    width: 150px;
+    width: 200px;
     border-radius: 5px;
-    border: 2px solid rgba(255, 255, 255, .2);
-    margin-top: 5px;
 }
 
 section.portfolio p {
@@ -199,6 +197,7 @@ section.portfolio a+a {
 section.portfolio .skills {
     font-size: 12px;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
@@ -208,4 +207,68 @@ section.portfolio .skills li {
     padding: 5px 10px;
     border-radius: 100px;
     font-weight: 500;
+}
+
+@media(min-width:500px) {
+    section.skills li {
+        width: calc(100% / 4);
+    }
+}
+
+@media(min-width:600px) {
+    section.skills li {
+        width: calc(100% / 5);
+    }
+}
+
+@media(min-width:900px) {
+    body {
+        padding: 0 90px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    aside {
+        width: 50%;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        padding: 90px 0;
+    }
+
+    aside div,
+    aside footer {
+        max-width: 320px;
+    }
+
+    aside .navigation,
+    aside footer {
+        display: block;
+    }
+
+    main {
+        width: 50%;
+    }
+
+    section:not(:last-of-type) {
+        margin-bottom: 150px;
+    }
+
+    section.resume li {
+        display: flex;
+    }
+
+    section.portfolio .projects>li {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    section.portfolio img {
+        width: 150px;
+        border: 2px solid rgba(255, 255, 255, .2);
+        margin-top: 5px;
+    }
 }
