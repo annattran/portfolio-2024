@@ -15,7 +15,7 @@ const About = () => {
                 <li>reading on travel destinations 🌎,</li>
                 <li>or aww-ing at cats and dogs 😍.</li>
             </ul>
-            <p>For more on my developer journey, read my blog post <a target="_blank" href="https://medium.com/@annattran/reunited-with-code-1960b82a94be">here</a>.</p>
+            <p>For more on my developer journey, read my blog post <a target="_blank" rel="noreferrer" href="https://medium.com/@annattran/reunited-with-code-1960b82a94be">here</a>.</p>
         </section>
     )
 }

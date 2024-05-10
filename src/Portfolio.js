@@ -27,8 +27,8 @@ const Portfolio = () => {
                             <li>CSS3</li>
                         </ul>
                         <div className="button-container">
-                            <a target="_blank" href="https://annattran.github.io/weddingGuestbook/">View Project</a>
-                            <a target="_blank" href="https://github.com/annattran/weddingGuestbook">View Code</a>
+                            <a target="_blank" rel="noreferrer" href="https://annattran.github.io/weddingGuestbook/">View Project</a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/annattran/weddingGuestbook">View Code</a>
                         </div>
                     </div>
                 </li>
@@ -43,8 +43,8 @@ const Portfolio = () => {
                             <li>JavaScript</li>
                         </ul>
                         <div className="button-container">
-                            <a target="_blank" href="https://annattran.github.io/marioMatchMania/">View Project</a>
-                            <a target="_blank" href="https://github.com/annattran/marioMatchMania">View Code</a>
+                            <a target="_blank" rel="noreferrer" href="https://annattran.github.io/marioMatchMania/">View Project</a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/annattran/marioMatchMania">View Code</a>
                         </div>
                     </div>
                 </li>
@@ -59,8 +59,8 @@ const Portfolio = () => {
                             <li>jQuery</li>
                         </ul>
                         <div className="button-container">
-                            <a target="_blank" href="https://annattran.github.io/payrollTimesheet/">View Project</a>
-                            <a target="_blank" href="https://github.com/annattran/payrollTimesheet">View Code</a>
+                            <a target="_blank" rel="noreferrer" href="https://annattran.github.io/payrollTimesheet/">View Project</a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/annattran/payrollTimesheet">View Code</a>
                         </div>
                     </div>
                 </li>
@@ -74,10 +74,10 @@ const Portfolio = () => {
                             <li>CSS3</li>
                         </ul>
                         <div className="button-container">
-                            <a target="_blank" href="https://annattran.github.io/pandaSanctuary/">View Project</a>
-                            <a target="_blank" href="https://github.com/annattran/pandaSanctuary">View Code</a>
-                            <a target="_blank" href={mobilePSD}>Mobile Design</a>
-                            <a target="_blank" href={desktopPSD}>Desktop Design</a>
+                            <a target="_blank" rel="noreferrer" href="https://annattran.github.io/pandaSanctuary/">View Project</a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/annattran/pandaSanctuary">View Code</a>
+                            <a target="_blank" rel="noreferrer" href={mobilePSD}>Mobile Design</a>
+                            <a target="_blank" rel="noreferrer" href={desktopPSD}>Desktop Design</a>
                         </div>
                     </div>
                 </li>
@@ -93,8 +93,8 @@ const Portfolio = () => {
                             <li>SCSS</li>
                         </ul>
                         <div className="button-container">
-                            <a target="_blank" href="https://dineanddashjuno.github.io/projectSix/">View Project</a>
-                            <a target="_blank" href="https://github.com/dineAndDashJuno/projectSix">View Code</a>
+                            <a target="_blank" rel="noreferrer" href="https://dineanddashjuno.github.io/projectSix/">View Project</a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/dineAndDashJuno/projectSix">View Code</a>
                         </div>
                     </div>
                 </li>

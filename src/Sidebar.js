@@ -52,17 +52,17 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="http://www.linkedin.com/in/annattran">
+                        <a target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/annattran">
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="http://www.github.com/annattran">
+                        <a target="_blank" rel="noreferrer" href="http://www.github.com/annattran">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
                     <label htmlFor="">
-                        <a target="_blank" href="http://www.twitter.com/itsannatran">
+                        <a target="_blank" rel="noreferrer" href="http://www.twitter.com/itsannatran">
                             <FontAwesomeIcon icon={faTwitter} />
                         </a>
                     </label>
@@ -76,7 +76,7 @@ const Sidebar = () => {
                 </ul>
             </div>
             <footer>
-                <small>&copy; 2024. Inspired by <a target="_blank" href="https://brittanychiang.com/">Brittany Chiang</a>. Coded in <span>Visual Studio Code</span> by yours truly, built with <span>React</span> and deployed with <span>Netlify</span>.</small>
+                <small>&copy; 2024. Inspired by <a target="_blank" rel="noreferrer" href="https://brittanychiang.com/">Brittany Chiang</a>. Coded in <span>Visual Studio Code</span> by yours truly, built with <span>React</span> and deployed with <span>Netlify</span>.</small>
             </footer>
         </aside>
     )
