@@ -245,6 +245,51 @@ section.portfolio .skills li {
     font-weight: 500;
 }
 
+section.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.contact label+input,
+section.contact label+textarea {
+    margin-bottom: 30px;
+}
+
+section.contact input,
+section.contact textarea {
+    background: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+}
+
+section.contact textarea {
+    height: 120px;
+    padding: 10px;
+}
+
+section.contact button {
+    height: 40px;
+    background: rgba(255, 255, 255, .2);
+    color: white;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 50px;
+    cursor: pointer;
+    transition: all ease-out .15s;
+}
+
+section.contact button:hover {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
 @media(min-width:500px) {
     section.skills li {
         width: calc(100% / 4);
