@@ -5,6 +5,8 @@ import marioMatchMania from './assets/marioMatchMania.png';
 import pandaSanctuary from './assets/pandaSanctuary.png';
 import payrollTimesheet from './assets/payrollTimesheet.png';
 import weddingGuestbook from './assets/weddingGuestbook.png';
+import mobilePSD from './assets/mobilePSD.png';
+import desktopPSD from './assets/desktopPSD.png';
 
 const Portfolio = () => {
     return (
@@ -74,8 +76,8 @@ const Portfolio = () => {
                         <div className="button-container">
                             <a target="_blank" href="https://annattran.github.io/pandaSanctuary/">View Project</a>
                             <a target="_blank" href="https://github.com/annattran/pandaSanctuary">View Code</a>
-                            <a href="">Mobile Design</a>
-                            <a href="">Desktop Design</a>
+                            <a target="_blank" href={mobilePSD}>Mobile Design</a>
+                            <a target="_blank" href={desktopPSD}>Desktop Design</a>
                         </div>
                     </div>
                 </li>

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import resume from './assets/anna-tran-resume.pdf';
 
 const Resume = () => {
     return (
@@ -46,7 +47,7 @@ const Resume = () => {
                     <p className="title">Graduated from Hospitality and Tourism Management at <a target="_blank" href="https://www.torontomu.ca/">Toronto Metropolitan University</a></p>
                 </li>
             </ul>
-            <a href="">View Full Resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+            <a target="_blank" href={resume}>View Full Resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </section>
     )
 }
