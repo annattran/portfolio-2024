@@ -3,12 +3,7 @@ import { faLinkedinIn, faGithub, faTwitter } from '@fortawesome/free-brands-svg-
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Sidebar = () => {
-    const scrollToSection = (e) => {
-        e.preventDefault();
-        let sectionName = e.target.href.split("#")[1];
-        let section = document.getElementById(sectionName);
-        section.scrollIntoView({ behavior: "smooth" })
-
+    const updateClass = (e) => {
         let activeElement = document.querySelector('li.active');
         activeElement.classList.remove('active');
 
@@ -42,11 +37,11 @@ const Sidebar = () => {
                     </label>
                 </ul>
                 <ul className="navigation">
-                    <li className="active" onClick={scrollToSection}><a href="#about">About Me</a></li>
-                    <li><a href="#resume" onClick={scrollToSection}>My Resume</a></li>
-                    <li><a href="#skills" onClick={scrollToSection}>My Toolbox</a></li>
-                    <li><a href="#portfolio" onClick={scrollToSection}>Featured Projects</a></li>
-                    <li><a href="#contact" onClick={scrollToSection}>Let's Connect</a></li>
+                    <li className="active" onClick={updateClass}><a href="#about">About Me</a></li>
+                    <li><a href="#resume" onClick={updateClass}>My Resume</a></li>
+                    <li><a href="#skills" onClick={updateClass}>My Toolbox</a></li>
+                    <li><a href="#portfolio" onClick={updateClass}>Featured Projects</a></li>
+                    <li><a href="#contact" onClick={updateClass}>Let's Connect</a></li>
                 </ul>
             </div>
             <footer>
