@@ -1,8 +1,39 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { useState, useEffect, useRef } from 'react';
 
 const Sidebar = () => {
+    const [activeSection, setActiveSection] = useState('about');
+    const sections = useRef([]);
+
+    const handleScroll = () => {
+        const windowOffset = window.pageYOffset || window.scrollY;
+        const padding = 90;
+        const pageYOffset = windowOffset + padding;
+        let newActiveSection = null;
+
+        sections.current.forEach((section) => {
+            const sectionOffsetTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (pageYOffset >= sectionOffsetTop && pageYOffset < sectionOffsetTop + sectionHeight) {
+                newActiveSection = section.id
+            }
+        })
+
+        setActiveSection(newActiveSection);
+    }
+
+    useEffect(() => {
+        sections.current = document.querySelectorAll('section');
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);;
+        }
+    }, []);
+
     const updateClass = (e) => {
         let activeElement = document.querySelector('li.active');
         activeElement.classList.remove('active');
@@ -37,11 +68,11 @@ const Sidebar = () => {
                     </label>
                 </ul>
                 <ul className="navigation">
-                    <li className="active" onClick={updateClass}><a href="#about">About Me</a></li>
-                    <li><a href="#resume" onClick={updateClass}>My Resume</a></li>
-                    <li><a href="#skills" onClick={updateClass}>My Toolbox</a></li>
-                    <li><a href="#portfolio" onClick={updateClass}>Featured Projects</a></li>
-                    <li><a href="#contact" onClick={updateClass}>Let's Connect</a></li>
+                    <li className={activeSection === 'about' ? 'active' : null}><a href="#about" onClick={updateClass}>About Me</a></li>
+                    <li className={activeSection === 'resume' ? 'active' : null}><a href="#resume" onClick={updateClass}>My Resume</a></li>
+                    <li className={activeSection === 'skills' ? 'active' : null}><a href="#skills" onClick={updateClass}>My Toolbox</a></li>
+                    <li className={activeSection === 'portfolio' ? 'active' : null}><a href="#portfolio" onClick={updateClass}>Featured Projects</a></li>
+                    <li className={activeSection === 'contact' ? 'active' : null}><a href="#contact" onClick={updateClass}>Let's Connect</a></li>
                 </ul>
             </div>
             <footer>
