@@ -76,7 +76,7 @@ const Sidebar = () => {
                 </ul>
             </div>
             <footer>
-                <small>&copy; 2024. Inspired by <a target="_blank" rel="noreferrer" href="https://brittanychiang.com/">Brittany Chiang</a>. Coded in <span>Visual Studio Code</span> by yours truly, built with <span>React</span> and deployed with <span>Netlify</span>.</small>
+                <small>&copy; 2024. Inspired by <a target="_blank" rel="noreferrer" href="https://brittanychiang.com/">Brittany Chiang</a>, coded in <span>Visual Studio Code</span>, built with <span>React</span> and deployed with <span>Netlify</span>.</small>
             </footer>
         </aside>
     )

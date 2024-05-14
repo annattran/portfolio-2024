@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCubesStacked } from '@fortawesome/free-solid-svg-icons'
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faCss3Alt, faSass, faJs, faReact, faPhp, faWordpress, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Skills = () => {
     return (
         <section id="skills" className="skills">
             <h3 className="section-title">
-                <FontAwesomeIcon icon={faCubesStacked} />
+                <FontAwesomeIcon icon={faScrewdriverWrench} />
                 My Toolbox
             </h3>
             <ul>
