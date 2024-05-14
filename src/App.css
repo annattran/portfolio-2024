@@ -12,7 +12,7 @@ html {
 
 body {
     background-color: #8BC6EC;
-    background-image: linear-gradient(-45deg, #8BC6EC, #8BC6EC, #9599E2, #9599E2);
+    background-image: linear-gradient(-45deg, #D9AFD9, #D9AFD9, #8BC6EC, #8BC6EC);
     background-size: 400% 400%;
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -164,8 +164,18 @@ section.resume p {
     margin: 0;
 }
 
-section.resume li+li {
-    margin-top: 30px;
+section.resume li {
+    padding: 15px;
+    border-radius: 5px;
+    transition: all ease-out .15s;
+}
+
+section.resume li:first-of-type {
+    margin-top: -15px;
+}
+
+section.resume li:hover {
+    background: rgba(255, 255, 255, .2);
 }
 
 section.resume .duration {
@@ -186,7 +196,8 @@ section.resume a {
 section.skills ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px 0;
+    gap: 15px 0;
+    margin-top: 0;
 }
 
 section.skills li {
@@ -194,20 +205,38 @@ section.skills li {
     flex-direction: column;
     align-items: center;
     width: calc(100% / 3);
+    padding: 1em 0;
+    border-radius: 5px;
+    transition: all ease-out .15s;
+}
+
+section.skills li:hover {
+    background: rgba(255, 255, 255, .2);
 }
 
 section.skills ul svg {
     font-size: 40px;
 }
 
+section.skills ul p {
+    margin-bottom: 0;
+}
+
 section.portfolio .projects>li {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 25px 15px;
+    border-radius: 5px;
+    transition: all ease-out .15s;
 }
 
-section.portfolio .projects>li+li {
-    margin-top: 50px;
+section.portfolio .projects>li:first-of-type {
+    margin-top: -25px;
+}
+
+section.portfolio .projects>li:hover {
+    background: rgba(255, 255, 255, .2);
 }
 
 section.portfolio img {
@@ -219,15 +248,6 @@ section.portfolio p {
     margin: 0;
     font-size: 14px;
     color: rgba(255, 255, 255, .7);
-}
-
-section.portfolio .button-container {
-    font-size: 14px;
-    margin-top: 20px;
-}
-
-section.portfolio a+a {
-    margin-left: 20px;
 }
 
 section.portfolio .skills {
@@ -243,6 +263,14 @@ section.portfolio .skills li {
     padding: 5px 10px;
     border-radius: 100px;
     font-weight: 500;
+}
+
+section.portfolio .button-container {
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
 }
 
 section.contact form {
