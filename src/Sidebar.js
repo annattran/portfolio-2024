@@ -15,9 +15,8 @@ const Sidebar = () => {
 
         sections.current.forEach((section) => {
             const sectionOffsetTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
 
-            if (pageYOffset >= sectionOffsetTop && pageYOffset < sectionOffsetTop + sectionHeight) {
+            if (pageYOffset >= sectionOffsetTop || windowOffset + window.innerHeight >= document.body.offsetHeight) {
                 newActiveSection = section.id
             }
         })

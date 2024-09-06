@@ -204,7 +204,7 @@ section.skills li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% / 3);
+    min-width: 128px;
     padding: 1em 0;
     border-radius: 5px;
     transition: all ease-out .15s;
@@ -226,17 +226,21 @@ section.portfolio .projects>li {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 25px 15px;
+    padding: 15px;
     border-radius: 5px;
     transition: all ease-out .15s;
 }
 
 section.portfolio .projects>li:first-of-type {
-    margin-top: -25px;
+    margin-top: -15px;
 }
 
 section.portfolio .projects>li:hover {
     background: rgba(255, 255, 255, .2);
+}
+
+section.portfolio .projects>li+li {
+    margin-top: 20px;
 }
 
 section.portfolio img {
@@ -316,18 +320,6 @@ section.contact button {
 section.contact button:hover {
     background: none;
     border: 2px solid rgba(255, 255, 255, .2);
-}
-
-@media(min-width:500px) {
-    section.skills li {
-        width: calc(100% / 4);
-    }
-}
-
-@media(min-width:600px) {
-    section.skills li {
-        width: calc(100% / 5);
-    }
 }
 
 @media(min-width:900px) {
