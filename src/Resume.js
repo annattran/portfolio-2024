@@ -16,7 +16,7 @@ const Resume = () => {
                 </li>
                 <li>
                     <p className="duration">Oct 2022 — Sep 2023</p>
-                    <p className="title">Solutions Architect at <a target="_blank" rel="noreferrer" href="https://safelinegroup.ca/">Safeline Group</a></p>
+                    <p className="title">Technical Project Lead at <a target="_blank" rel="noreferrer" href="https://safelinegroup.ca/">Safeline Group</a></p>
                 </li>
                 <li>
                     <p className="duration">Aug 2021 — Sep 2022</p>

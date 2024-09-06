@@ -12,7 +12,7 @@ const About = () => {
             <p>For more on my developer journey, read my blog post <a target="_blank" rel="noreferrer" href="https://medium.com/@annattran/reunited-with-code-1960b82a94be">here</a>.</p>
             <p>Outside of coding, you'll find me:</p>
             <ul>
-                <li>staying active (🏸🏂🏻🏋🏻‍♀️🧘🏻‍♀️🏊🏻‍♀️🚴🏻‍♀️ to name a few)</li>
+                <li>doing something active (🏸🏂🏻🏋🏻‍♀️🧘🏻‍♀️🏊🏻‍♀️🚴🏻‍♀️ to name a few)</li>
                 <li>cooking or baking 👩🏻‍🍳</li>
                 <li>watching TV shows and movies 🍿</li>
             </ul>
